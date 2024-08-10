@@ -1,11 +1,5 @@
 # Document-Understanding AI Assistant Web App
 
-Development of a Document-Understanding AI Assistant using LangChain, FAISS, and Anthropic's Language Model
-Certainly! Here's a comprehensive GitHub README for your project based on the task description and the modifications you've made:
-
-```markdown
-# Document-Understanding AI Assistant
-
 ## Overview
 
 This project implements an interactive AI assistant capable of understanding and answering questions about content from PDF or TXT files. The assistant leverages LangChain for language processing, FAISS for efficient similarity search, and Anthropic's Claude 3 language model for document comprehension. The user interface is built with Streamlit, providing an intuitive web-based interaction experience.
@@ -13,7 +7,7 @@ This project implements an interactive AI assistant capable of understanding and
 ## Features
 
 - **Document Processing**: Extracts and preprocesses content from PDF and TXT files.
-- **AI-Powered Question Answering**: Utilizes Claude 3 Opus model to provide context-aware responses based on document content.
+- **AI-Powered Question Answering**: Utilizes one of the Claude models to provide context-aware responses based on document content.
 - **Vector Search**: Implements FAISS for efficient retrieval of relevant document sections.
 - **Interactive UI**: Streamlit-based web interface for easy file upload and question asking.
 - **Feedback Mechanism**: Allows users to rate answers and provide improvement suggestions.
@@ -74,8 +68,8 @@ This project implements an interactive AI assistant capable of understanding and
 1. **Document Processing**: The app uses PyPDF to extract text from PDF files or reads TXT files directly.
 2. **Text Embedding**: The extracted text is split into chunks and embedded using HuggingFace embeddings.
 3. **Vector Storage**: FAISS is used to store and index the text embeddings for efficient retrieval.
-4. **Question Answering**: When a user asks a question, the app retrieves relevant text chunks using FAISS and passes them to the Claude 3 model along with the question.
-5. **Response Generation**: Claude 3 generates a response based on the retrieved context and the question.
+4. **Question Answering**: When a user asks a question, the app retrieves relevant text chunks using FAISS and passes them to the Claude model along with the question.
+5. **Response Generation**: Claude generates a response based on the retrieved context and the question.
 6. **Feedback Loop**: Users can provide feedback on the responses, which can be used for future improvements.
 
 ## Future Improvements
@@ -83,8 +77,6 @@ This project implements an interactive AI assistant capable of understanding and
 - Implement more advanced document preprocessing techniques
 - Add support for more file formats (e.g., DOCX, HTML)
 - Enhance the feedback mechanism to actively improve the model's responses
-- Implement caching to improve performance for repeated queries
-- Add multi-language support
 
 ## Contributing
 
@@ -99,15 +91,3 @@ Contributions to improve the project are welcome. Please follow these steps:
 ## License
 
 [MIT License](LICENSE)
-
-## Acknowledgments
-
-- Anthropic for providing the Claude 3 API
-- The LangChain community for their excellent documentation and examples
-- Streamlit for their intuitive web app framework
-
-```
-
-This README provides a comprehensive overview of your project, including its features, technology stack, setup instructions, usage guide, and explanations of how it works. It also includes sections on future improvements and how others can contribute to the project.
-
-You may want to adjust some details based on your specific implementation or add any additional features or nuances that are unique to your project. Also, remember to create a LICENSE file if you haven't already, and update the repository URL and any other placeholder information with your actual project details.
