@@ -1,0 +1,8 @@
+streamlit==1.24.0
+langchain==0.0.228
+anthropic==0.3.2
+pypdf==3.12.1
+pandas==2.0.3
+faiss-cpu==1.7.4
+pydantic==1.10.10
+sentence-transformers==2.2.2
