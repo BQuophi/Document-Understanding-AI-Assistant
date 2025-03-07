@@ -1,4 +1,4 @@
-# Document-Understanding AI Assistant Web App
+# Document-Understanding AI Assistant Web App ( Resume AI Assistant )
 
 ## Overview
 
