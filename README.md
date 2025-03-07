@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project implements an interactive AI assistant capable of understanding and answering questions about content from PDF files. The assistant leverages LangChain for language processing, FAISS for efficient similarity search, and Anthropic's Claude 2 language model for document comprehension. The user interface is built with Streamlit, providing an intuitive web-based interaction experience.
+This project implements an interactive AI assistant capable of understanding and answering questions about content from PDF (Resume) files. The assistant leverages LangChain for language processing, FAISS for efficient similarity search, and Anthropic's Claude 2 language model for document comprehension. The user interface is built with Streamlit, providing an intuitive web-based interaction experience.
 
 ## Features
 
-- **Document Processing**: Extracts and preprocesses content from PDF and TXT files.
+- **Document Processing**: Extracts and preprocesses content from resume pdf files.
 - **AI-Powered Question Answering**: Utilizes one of the Claude models to provide context-aware responses based on document content.
 - **Vector Search**: Implements FAISS for efficient retrieval of relevant document sections.
 - **Interactive UI**: Streamlit-based web interface for easy file upload and question asking.
