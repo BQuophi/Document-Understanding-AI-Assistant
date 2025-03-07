@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements an interactive AI assistant capable of understanding and answering questions about content from PDF or TXT files. The assistant leverages LangChain for language processing, FAISS for efficient similarity search, and Anthropic's Claude 2 language model for document comprehension. The user interface is built with Streamlit, providing an intuitive web-based interaction experience.
+This project implements an interactive AI assistant capable of understanding and answering questions about content from PDF files. The assistant leverages LangChain for language processing, FAISS for efficient similarity search, and Anthropic's Claude 2 language model for document comprehension. The user interface is built with Streamlit, providing an intuitive web-based interaction experience.
 
 ## Features
 
@@ -65,7 +65,7 @@ This project implements an interactive AI assistant capable of understanding and
 
 ## How It Works
 
-1. **Document Processing**: The app uses PyPDF to extract text from PDF files or reads TXT files directly.
+1. **Document Processing**: The app uses PyPDF to extract text from PDF files.
 2. **Text Embedding**: The extracted text is split into chunks and embedded using HuggingFace embeddings.
 3. **Vector Storage**: FAISS is used to store and index the text embeddings for efficient retrieval.
 4. **Question Answering**: When a user asks a question, the app retrieves relevant text chunks using FAISS and passes them to the Claude model along with the question.
